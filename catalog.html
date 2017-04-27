@@ -7,8 +7,9 @@
     <body>
         <header class="main-header">
             <div class="container">
-                <div class="main-logo">
-                </div>
+                <a class="main-logo">
+                    <img src="" alt="Логотип Nerd's">
+                </a>
                 <nav class="main-navigation">
                     <ul class="main-navigation-list">
                         <li class="main-navigation-item"><a href="#">Студия</a></li>
@@ -27,22 +28,22 @@
         </header>
         <main class="container">
             <form class="nerds-catalog-form" action="/nerd's-mail" method="post">
-                <section class="price">
-                    <h2>Стоимость</h2>
+                <fieldset class="price">
+                    <legend>Стоимость</legend>
                     <div class="price-slider">
                     </div>
-                </section>
-                <section class="variant-of-grid">
-                    <h2>Сетка:</h2>
+                </fieldset>
+                <fieldset class="variant-of-grid">
+                    <legend>Сетка:</legend>
                     <input type="radio" name="grid" id="grid-adaptive" checked>
                     <label for="grid-adaptive">Адаптивная</label>
                     <input type="radio" name="grid" id="grid-fixed">
                     <label for="grid-fixed">Фиксированная</label>
                     <input type="radio" name="grid" id="grid-rubber">
                     <label for="grid-rubber">Резиновая</label>
-                </section>
-                <section class="variant-of-features">
-                    <h2>Особенности:</h2>
+                </fieldset>
+                <fieldset class="variant-of-features">
+                    <legend>Особенности:</legend>
                     <input type="checkbox" name="features" id="slider" checked>
                     <label for="slider">Слайдер</label>
                     <input type="checkbox" name="features" id="block-of-features">
@@ -53,11 +54,11 @@
                     <label for="galery">Галерея</label>
                     <input type="checkbox" name="features" id="basket">
                     <label for="basket">Корзина</label>
-                </section>
+                </fieldset>
                 <button type="submit">Показать</button>
             </form>
             <section class="sorting">
-                <h2>Сортировать:</h2>
+                <div>Сортировать:</div>
                     <a>По цене</a>
                     <a>По типу</a>
                     <a>По названию</a>
@@ -89,16 +90,16 @@
                 </article>
             </section>
 
-            <section class="catalog-pagination">
-                <a>1</a>
-                <a class="btn" href="#">2</a>
-                <a class="btn" href="#">3</a>
-                <a class="btn" href="#">Следующая</a>
-            </section>
+            <ul class="catalog-pagination">
+                <li class="btn">1</li>
+                <li><a class="btn" href="#">2</a></li>
+                <li><a class="btn" href="#">3</a></li>
+                <li><a class="btn" href="#">Следующая</a></li>
+            </ul>
 
             <section class="map">
                 <div class="map-contacts">
-                    <h4 class="map-contacts-subtitle">Nerds design studio</h4>
+                    <h2 class="map-contacts-subtitle">Nerds design studio</h2>
                     <p class="map-contacts-text">191186, Санкт-Петербург,ул. Б. Коннюшенная, д. 19/8
                     <span class="map-contacts-tel"> тел. +7(812)275-75-75 </span></p>
                     <a class="map-contacts-btn-write-us" href="#">Напишите нам</a>
@@ -123,7 +124,7 @@
                     </a>
                 </section>
                 <section class="footer-proposal">
-                    <h4>Давайте дружить, это выгодно!</h4>
+                    <div>Давайте дружить, это выгодно!</div>
                     <p>Скидка 10% для друзей из социальных сетей.</p>
                 </section>
             </div>
