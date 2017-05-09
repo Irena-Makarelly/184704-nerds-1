@@ -8,6 +8,207 @@ body {
   font-family: "Roboto";
 }
 
+.clearfix::after {
+  content: "";
+
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.header-navigation {
+  margin-bottom: 18px;
+  margin: 0 auto;
+}
+
+.main-logo {
+  float: left;
+  width: 160px;
+  height: 65px;
+  margin-right: 200px;
+  margin-top: 50px;
+}
+
+.main-navigation-list {
+  list-style: none;
+  float: left;
+  width: 500px;
+  margin-right: 140px;
+}
+
+.main-navigation-item {
+  display: inline-block;
+  margin-right: 30px;
+  margin-top: 70px;
+}
+
+.user-block {
+  float: right;
+  width: 180px;
+}
+
+.slider-1 {
+  display: block;
+  background-image: url("../img/slide1.png");
+  background-size: 698px 413px;
+  background-repeat: no-repeat;
+
+  background-position: top 0px left 430px;
+}
+
+.slider-1-description {
+  float: left;
+  margin-bottom: 80px;
+}
+
+.slider-1-slogan {
+  width: 400px;
+  height: 125px;
+  margin-right: 50px;
+  margin-bottom: 30px;
+}
+
+.slider-1-text {
+  width: 360px;
+  margin-bottom: 40px;
+}
+
+.slider-btn {
+  margin-bottom: 80px;
+}
+
+.slider-2 {
+  display: none;
+  background-image: url("../img/slide2.png");
+  background-size: 663px 430px;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: top 0px left 490px;
+}
+
+.slider-2-description {
+  float: left;
+  margin-bottom: 80px;
+}
+
+.slider-2-slogan {
+  width: 535px;
+  margin-bottom: 30px;
+}
+
+.slider-2-text {
+  margin-bottom: 40px;
+  width: 430px;
+  margin-bottom: 40px;
+}
+
+.slider-3 {
+  display: none;
+  background-image: url("../img/slide3.png");
+  background-size: 760px 410px;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: top 0px left 400px;
+}
+
+.slider-3-description {
+  float: left;
+  margin-bottom: 80px;
+}
+
+.slider-3-slogan {
+  width: 430px;
+  margin-bottom: 30px;
+}
+
+.slider-3-text {
+  width: 360px;
+  margin-bottom: 40px;
+}
+
+.index-features-list {
+  margin-bottom: 120px;
+}
+
+.index-features-item {
+  float: left;
+  width: 300px;
+  margin-right: 100px;
+}
+
+.index-features-item:last-child {
+  margin-right: 0;
+}
+
+.index-about-us {
+  margin-bottom: 130px;
+}
+
+.index-about-us-left {
+  float: left;
+}
+
+.index-about-us-right {
+  float: right;
+}
+
+.logo-sites-images {
+  margin-bottom: 80px;
+  opacity: 0.3;
+}
+
+.logo-sites-images-htmlacademy {
+  margin-left: 50px;
+  margin-right: 95px;
+}
+
+.logo-sites-images-borodinski {
+  margin-right: 100px;
+}
+
+.logo-sites-images-pink {
+  margin-right: 120px;
+}
+
+.logo-sites-images-mishka {
+  margin-right: 60px;
+}
+
+.map-contacts {
+  z-index: 100;
+  width: 320px;
+  height: 310px;
+  background-color: white;
+  position: absolute;
+  left: 40px;
+  top: 55px;
+  padding-left: 50px;
+}
+
+.map-image {
+  background-image: url("../img/map+marker.jpg");
+  height: 420px;
+}
+
+.footer {
+  margin-top: 60px;
+}
+
+.footer-social-button {
+  float: left;
+}
+
+.footer-proposal {
+  float: right;
+}
+
+
+
+/*текстовое оформление */
 .index-features-item-title {
   font-size: 24px;
   line-height: 30px;
@@ -22,4 +223,80 @@ body {
   color: #000000;
   font-weight: bold;
   font-family: "Roboto";
+}
+
+.slider-1-slogan,
+.slider-2-slogan,
+.slider-3-slogan {
+  font-size: 55px;
+  line-height:55px;
+}
+
+
+
+
+
+
+
+
+
+
+ /*======================================
+ Системное оформление - не изменять
+=======================================*/
+
+body {
+  padding: 3px;
+}
+
+body > *,
+body > * > *,
+body > * > * > * {
+  position: relative;
+}
+
+body > *::before,
+body > * > *::before,
+body > * > * > *::before {
+  content: "";
+  position: absolute;
+
+  height: 24px;
+  padding: 2px 5px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Courier New", monotype;
+  white-space: nowrap;
+}
+
+body > *::before {
+  top: -3px;
+  left: -3px;
+}
+
+body > * > *::before {
+  top: -3px;
+  left: -3px;
+}
+
+body > * > * > *::before {
+  top: 0;
+  left: 0;
+}
+
+body > * {
+  background: rgba(0, 128, 0, 0.2);
+  box-shadow: 0 0 0 3px green;
+}
+
+body > *::before {
+  color: white;
+
+  background: green;
+}
+
+.main-header::before {
+  content: ".main-header";
 }
